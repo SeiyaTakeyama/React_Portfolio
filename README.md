@@ -4,14 +4,14 @@
 
 ## 環境構築
 
-creat-react-appで環境構築
+creat-react-appで環境構築  
 【Code】  
 1.npx create-react-app ○○  
 2.cd ○○  
 3.code .  
 4.npm start  
 
-### `npm start`
+### `APP.jsを編集`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
