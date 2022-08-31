@@ -11,13 +11,18 @@ creat-react-appで環境構築
 3.code .  
 4.npm start  
 
-### `APP.jsを編集`
+### APP.jsを編集
 
 1.inputタグを使い、入力フォームを作成  
 2.ImageGallaryコンポーネントを作成  
 3.ImageGallary.jsを作成し、App.jsにインポート  
+4.文字列を取得する為、Hookを利用↓  
+【useState】
 
-### `npm test`
+【useRef】  
+DOMを参照し、直接inputにアクセスして余計な再レンダリングを回避
+
+### npm test
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
