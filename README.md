@@ -15,18 +15,18 @@ creat-react-appで環境構築
 
 1.inputタグを使い、入力フォームを作成  
 2.ImageGallaryコンポーネントを作成  
-3.ImageGallary.jsを作成し、App.jsにインポート  
+3.ImageGallary.jsを作成し、App.jsにインポート    
 4.文字列を取得する為、Hooksを利用↓  
 【useState】
-取得する文字列を格納
+取得する文字列を格納して、差分が生じるか監視  
 【useRef】  
-DOMを参照し、直接inputにアクセスして余計な再レンダリングを回避
+仮想DOMを参照し、直接inputにアクセスして差分を比較→差分が生じたカ所のみをレンダリングし、余計な再レンダリングを回避  
   
 ↑  
-inputで打ち込んだ文字列を格納、監視  
+inputで打ち込んだ文字列を格納、監視し、差分発生箇所のみをレンダリングする  
   
-5.onSubmitを利用し、Enterキーを押した際に文字列を取得  
-6.Enterキーを押すと自動的に更新されてしまう為、preventDefaultにより制御した状態でhandleSubmitに渡す  
+5.onSubmitを利用し、Enterキーを押した際(フォームを送信した際)に文字列を取得  
+6.Enterキーを押すと自動的に更新されてしまう為、preventDefaultにより自動更新を制御した状態でhandleSubmitに渡す  
 
 ### App.jsにて、API関連を記述
 
@@ -46,4 +46,9 @@ inputで打ち込んだ文字列を格納、監視
 
 ### GitHubに公開
 
-
+【Code】  
+1.git init(ローカルリポジトリを作成)
+2.git add .(フォルダ内の全てをアップロード対象として指定)
+3.git commit -m “○○” (ファイルを○○で保存)
+4.git remote add origin url名 (GitHubで作成したリモートリポジトリとローカルリポジトリを関連付ける)
+5.git push origin main(プッシュしてアップロード)
