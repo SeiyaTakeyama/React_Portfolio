@@ -8,7 +8,6 @@ function App() {
 
   const handleSubmit =(e) => {
     e.preventDefault();
-    console.log(ref.current.value);
    
     const endpointURL=`https://pixabay.com/api/?key=29618373-6b237e60a938b5a91f40fb3be&q=${ref.current.value}&image_type=photo`
     fetch(endpointURL)
@@ -16,7 +15,6 @@ function App() {
         return res.json();
       })
       .then((data) => {
-        console.log(data.hits);
           setFetchData(data.hits);
       });
   };
