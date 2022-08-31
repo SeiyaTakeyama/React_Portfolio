@@ -1,10 +1,15 @@
-# Getting Started with Create React App
+# React,API,Hookを利用した画像検索アプリ作成
 
-create-react-appで環境構築
 
-## Available Scripts
 
-In the project directory, you can run:
+## 環境構築
+
+creat-react-appで環境構築
+【Code】
+npx create-react-app ○○
+cd ○○
+code .
+npm start
 
 ### `npm start`
 
