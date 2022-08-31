@@ -1,4 +1,4 @@
-# React,API,Hookを利用した画像検索アプリ作成
+# React,API,Hooksを利用した画像検索アプリ作成
 
 
 
@@ -11,21 +11,26 @@ creat-react-appで環境構築
 3.code .  
 4.npm start  
 
-### APP.jsを編集
+### App.jsを編集
 
 1.inputタグを使い、入力フォームを作成  
 2.ImageGallaryコンポーネントを作成  
 3.ImageGallary.jsを作成し、App.jsにインポート  
-4.文字列を取得する為、Hookを利用↓  
+4.文字列を取得する為、Hooksを利用↓  
 【useState】
-
+取得する文字列を格納
 【useRef】  
 DOMを参照し、直接inputにアクセスして余計な再レンダリングを回避
+  
+↑  
+inputで打ち込んだ文字列を格納、監視  
+  
+5.onSubmitを利用し、Enterキーを押した際に文字列を取得  
+6.Enterキーを押すと自動的に更新されてしまう為、preventDefaultにより制御した状態でhandleSubmitに渡す  
 
-### npm test
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### App.jsにて、API関連を記述
+URL内の任意の文字列を反映させるため、テンプレートリテラルを利用したURLを定義
+endpoint
 
 ### `npm run build`
 
