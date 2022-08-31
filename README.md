@@ -6,10 +6,10 @@
 
 creat-react-appで環境構築
 【Code】
-npx create-react-app ○○
-cd ○○
-code .
-npm start
+1.npx create-react-app ○○
+2.cd ○○
+3.code .
+4.npm start
 
 ### `npm start`
 
