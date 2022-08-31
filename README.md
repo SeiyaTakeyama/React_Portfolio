@@ -47,8 +47,8 @@ inputで打ち込んだ文字列を格納、監視し、差分発生箇所のみ
 ### GitHubに公開
 
 【Code】  
-1.git init(ローカルリポジトリを作成)
-2.git add .(フォルダ内の全てをアップロード対象として指定)
-3.git commit -m “○○” (ファイルを○○で保存)
-4.git remote add origin url名 (GitHubで作成したリモートリポジトリとローカルリポジトリを関連付ける)
-5.git push origin main(プッシュしてアップロード)
+1.git init(ローカルリポジトリを作成)  
+2.git add .(フォルダ内の全てをアップロード対象として指定)  
+3.git commit -m “○○” (ファイルを○○で保存)  
+4.git remote add origin url名 (GitHubで作成したリモートリポジトリとローカルリポジトリを関連付ける)  
+5.git push origin main(プッシュしてアップロード)  
