@@ -32,8 +32,5 @@ function App() {
     </div>
   );
 }
-  // h2でタイトル表示
-  // inputで文字列入力箇所作成
-  // 「ImageGallery」コンポーネントで子から
 
 export default App;
