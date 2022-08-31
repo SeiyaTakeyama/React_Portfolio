@@ -13,11 +13,9 @@ creat-react-appで環境構築
 
 ### `APP.jsを編集`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1.inputタグを使い、入力フォームを作成  
+2.ImageGallaryコンポーネントを作成  
+3.ImageGallary.jsを作成し、App.jsにインポート  
 
 ### `npm test`
 
