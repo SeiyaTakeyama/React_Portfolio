@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 36px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:antiquewhite;
+}
+
+.container h2 {
+  margin-bottom: 12px;
+  font-size: 3rem;
+  color:rgb(4, 211, 142);
+}
+
+.container input {
+  min-width: 360px;
+  padding: 5px 12px;
+  margin-bottom: 36px;
+  outline: none;
+}
