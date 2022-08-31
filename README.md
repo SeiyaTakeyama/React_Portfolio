@@ -29,55 +29,18 @@ inputで打ち込んだ文字列を格納、監視
 6.Enterキーを押すと自動的に更新されてしまう為、preventDefaultにより制御した状態でhandleSubmitに渡す  
 
 ### App.jsにて、API関連を記述
-URL内の任意の文字列を反映させるため、テンプレートリテラルを利用したURLを定義
-endpoint
 
-### `npm run build`
+1.URL内の任意の文字列を反映させるため、テンプレートリテラルを利用したURLを定義  
+2.APIのデータ取得の為、fetch関数を利用した非同期処理通信を利用  
+3.データ取得時、responseで受け取り、オブジェクト型(json)に変換  
+4.3で取得したjsonデータをuseStateに格納  
+5.fetchDataが変わるごとにsetFetchDataが呼ばれ、レンダリングされる  
+6.ImageGallery.jsで使用するmap関数は配列のみ使用できるため、オブジェクト(連想配列)内の必要な配列のみを(data.hits)で指定  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ImageGallery.jsを編集
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1.fetchDataをImageGalleryに渡すため、App.jsのImageGallery内でfetchDataを同名に指定して渡す  
+2.map関数を利用し、fetchDataをdataとして配列の全ての要素を処理  
+3.画像クリック時に、dataのページURLのみを取得し、別タブにて表示  
+4.data内の画像URLのみを取得してimgとして表示  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
