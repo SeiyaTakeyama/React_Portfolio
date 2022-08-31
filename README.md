@@ -5,7 +5,7 @@
 ## 環境構築
 
 creat-react-appで環境構築
-【Code】
+【Code】  
 1.npx create-react-app ○○  
 2.cd ○○  
 3.code .  
