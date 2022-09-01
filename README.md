@@ -18,7 +18,7 @@ creat-react-appで環境構築
 2.ImageGallaryコンポーネントを作成  
 3.ImageGallary.jsを作成し、App.jsにインポート    
 4.文字列を取得する為、Hooksを利用↓  
-【useState】
+【useState】  
 取得する文字列を格納して、差分が生じるか監視  
 【useRef】  
 仮想DOMを参照し、直接inputにアクセスして差分を比較→差分が生じたカ所のみをレンダリングし、余計な再レンダリングを回避  
