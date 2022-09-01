@@ -34,9 +34,9 @@ inputで打ち込んだ文字列を格納、監視し、差分が生じたカ所
 1.URL内の任意の文字列を反映させるため、テンプレートリテラルを利用したURLを定義  
 2.APIのデータ取得の為、fetch関数を利用した非同期処理通信を利用  
 3.非同期処理通信により取得したデータを、responseで受け取り、オブジェクト型(json)に変換(fetchはHTML形式でレスポンスを返すため)  
-4.3で取得したjsonデータをdataに代入し、それを引数にsetFetchDataを利用しfetchDataに結果を代入
+4.3で取得したjsonデータをdataに代入し、それを引数にsetFetchDataを利用しfetchDataに結果を代入  
 5.fetchDataが変わるごとにsetFetchDataが呼ばれ、レンダリングされる  
-6.ImageGallery.jsで使用するmap関数は配列のみ使用できるため、オブジェクト(連想配列)内の必要な配列のみを(data.hits)で指定  
+6.ImageGallery.jsで使用するmap関数は配列のみ使用できるため、オブジェクト(連想配列)内の必要な配列のみを(data.hits)で指定   
 
 ### ImageGallery.jsを編集
 
